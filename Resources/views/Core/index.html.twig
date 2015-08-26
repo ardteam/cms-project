@@ -1,0 +1,25 @@
+{% extends base_template %}
+
+{% block content_body %}
+    <div class="container content">
+
+        <h1>Bienvenue sur l'initialisateur de site Ard Team</h1>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Ajouter votre contenu ici.<br>
+                N'oubliez pas de renseigner votre en-tête et votre pied-de-page.
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(document).ready(function(){
+            $(".menu-accueil").addClass('active');
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!--HEADER-->
+<div class="header">
+    <div class="menu-horizontal">
+        <div class="container">
+            <nav>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="menu-accueil"><a href="{{ path("homepage") }}">Accueil</a></li>
+                </ul>
+            </nav>
+            <div class="pull-right">
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    Connecté en tant que {{ app.user.username }}
+                    -
+                    <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+                {% else %}
+                    <a href="{{ path('fos_user_security_login') }}">Connexion</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

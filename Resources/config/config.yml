@@ -1,0 +1,8 @@
+# add this configuration to your application's config.yml
+
+# Twig Configuration
+twig:
+    # ...
+    globals:
+        google_analytics_ua: "%universal_analytics%"
+        base_template: "ATCmsBundle:Core:base.html.twig"

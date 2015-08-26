@@ -1,0 +1,57 @@
+{
+  "name" : "ardteam/cms-project",
+  "description" : "CMS Bundle",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "ardteam",
+    "email" : "contact@ardteam.fr"
+  }],
+  "keywords" : [
+    "ardteam cms bundle"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "php": ">=5.3.2",
+    "symfony/symfony": "2.7.*",
+
+    "doctrine/orm": "~2.2,>=2.2.3,<2.5",
+    "doctrine/dbal": "<2.5",
+    "doctrine/doctrine-bundle": "~1.4",
+
+    "symfony/assetic-bundle": "~2.3",
+    "symfony/swiftmailer-bundle": "~2.3",
+    "symfony/monolog-bundle": "~2.4",
+    "sensio/distribution-bundle": "~4.0",
+    "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
+    "incenteev/composer-parameter-handler": "~2.0",
+
+    "ardteam/user-project" : "1.0.x@dev",
+    "friendsofsymfony/user-bundle": "@dev",
+
+    "stof/doctrine-extensions-bundle": "1.1.0",
+    "egeloen/ckeditor-bundle": "3.*",
+    "helios-ag/fm-elfinder-bundle": "~5"
+  },
+  "require-dev": {
+    "doctrine/doctrine-bundle": "~1.3",
+    "swiftmailer/swiftmailer": "~4.3|~5",
+    "willdurand/propel-typehintable-behavior": "~1.0",
+    "symfony/yaml": "~2.3",
+    "symfony/validator": "~2.3"
+  },
+  "target-dir" : "AT/UserBundle",
+  "autoload" : {
+    "psr-0" : {
+      "AT\\UserBundle\\" : ""
+    }
+  },
+  "repositories" : [
+  ],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0.x-dev"
+    }
+  }
+}
