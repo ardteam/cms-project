@@ -41,10 +41,10 @@
     "symfony/yaml": "~2.3",
     "symfony/validator": "~2.3"
   },
-  "target-dir" : "AT/UserBundle",
+  "target-dir" : "AT/CmsBundle",
   "autoload" : {
     "psr-0" : {
-      "AT\\UserBundle\\" : ""
+      "AT\\CmsBundle\\" : ""
     }
   },
   "repositories" : [
