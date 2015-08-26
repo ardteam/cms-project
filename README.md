@@ -63,3 +63,21 @@ Declare your main Bundle extending the ATCmsBundle
         return 'ATCmsBundle';
     }
 ```
+
+and create a DefaultController extending "AT\CmsBundle\Controller\CoreController"
+
+```
+    <?php
+
+    namespace AppBundle\Controller;
+
+    use AT\CmsBundle\Controller\CoreController;
+    use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Component\HttpFoundation\Request;
+
+    class DefaultController extends CoreController
+    {
+    }
+
+```

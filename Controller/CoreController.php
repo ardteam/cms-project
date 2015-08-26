@@ -15,7 +15,7 @@ class CoreController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('', array());
+        return $this->render('@ATCms/Core/index.html.twig');
     }
 
     /**
@@ -26,7 +26,7 @@ class CoreController extends Controller
      */
     public function partialBaseHeaderAction()
     {
-        return $this->render('ATCmsBundle/Core/partials/header.html.twig');
+        return $this->render('@ATCms/Core/partials/header.html.twig');
     }
 
     /**
@@ -37,6 +37,6 @@ class CoreController extends Controller
      */
     public function partialBaseFooterAction()
     {
-        return $this->render('ATCmsBundle/Core/partials/footer.html.twig');
+        return $this->render('@ATCms/Core/partials/footer.html.twig');
     }
 }
