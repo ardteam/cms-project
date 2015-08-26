@@ -53,3 +53,13 @@ twig:
         google_analytics_ua: "%universal_analytics%"
         base_template: "ATCmsBundle:Core:base.html.twig"
 ```
+
+Declare your main Bundle extending the ATCmsBundle
+
+```
+    # xxxBundle.php
+    public function getParent()
+    {
+        return 'ATCmsBundle';
+    }
+```
